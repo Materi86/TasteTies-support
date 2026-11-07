@@ -32,9 +32,17 @@ function initTheme() {
 
     if (toggle) {
       const nextTheme = theme === 'dark' ? 'ljust' : 'mörkt';
-      toggle.setAttribute('aria-label', `Byt till ${nextTheme} läge`);
+      const english = root.lang === 'en';
+      toggle.setAttribute(
+        'aria-label',
+        english ? `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode` : `Byt till ${nextTheme} läge`
+      );
       const label = toggle.querySelector('.theme-label');
-      if (label) label.textContent = theme === 'dark' ? 'Ljust läge' : 'Mörkt läge';
+      if (label) {
+        label.textContent = english
+          ? (theme === 'dark' ? 'Light mode' : 'Dark mode')
+          : (theme === 'dark' ? 'Ljust läge' : 'Mörkt läge');
+      }
     }
   };
 
@@ -66,7 +74,12 @@ function initMobileNavigation() {
   const setOpen = (open, returnFocus = false) => {
     nav.classList.toggle('is-open', open);
     toggle.setAttribute('aria-expanded', String(open));
-    toggle.setAttribute('aria-label', open ? 'Stäng meny' : 'Öppna meny');
+    toggle.setAttribute(
+      'aria-label',
+      document.documentElement.lang === 'en'
+        ? (open ? 'Close menu' : 'Open menu')
+        : (open ? 'Stäng meny' : 'Öppna meny')
+    );
     document.body.classList.toggle('nav-open', open);
 
     if (open) {
