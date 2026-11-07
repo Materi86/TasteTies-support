@@ -6,6 +6,7 @@
   <meta name="description" content="How TasteTies handles information in the app, on this website and when you contact support.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#F7F5EF">
+  <link rel="canonical" href="https://materi86.github.io/TasteTies-support/privacy-en.html">
   <title>Privacy Policy – TasteTies</title>
 
   <link rel="icon" type="image/png" href="assets/app-icon.png">
@@ -52,34 +53,90 @@
           <p class="policy-meta">Updated 7 November 2026 · <a href="privacy.html" hreflang="sv" lang="sv">Svenska</a></p>
         </header>
 
-        <dl class="legal-identity">
-          <div><dt>Data controller</dt><dd>Mattias Isberg</dd></div>
-          <div><dt>Email</dt><dd><a href="mailto:taste-ties@hotmail.com">taste-ties@hotmail.com</a></dd></div>
-          <div><dt>Postal address</dt><dd>Gulmåravägen 6, Gråbo, Sweden</dd></div>
-        </dl>
-
         <div class="policy-content">
-          <section>
-            <h2>App data and Apple services</h2>
-            <p>TasteTies normally stores recipes, photos, meal plans, shopping lists, settings, import history, timers and local diagnostics on your device. TasteTies has no developer account, recipe server, advertising or third-party analytics in the app.</p>
-            <p>CloudKit sync is off by default. If enabled, recipes, images, shopping items and sync metadata may be stored in your private iCloud database. Sharing makes the selected content available to participants according to their permissions. Turning sync off stops new sync operations without automatically deleting cloud data. Optional iCloud Drive backups are separate. They contain database records and omit image files, meal plans stored outside the database and drafts.</p>
-            <p>Apple provides iCloud, notifications, WatchConnectivity and StoreKit. Sync can use silent push notifications, and selected cooking, timer or shopping data can go to a paired Apple Watch. Apple handles App Store purchases. See <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
+          <p>CONTACT DETAILS<br>
+Data controller/developer: Mattias Isberg<br>
+Email: <a href="mailto:taste-ties@hotmail.com">taste-ties@hotmail.com</a><br>
+Postal address: Gulmåravägen 6, Gråbo, Sweden<br>
+Public privacy policy: <a href="https://materi86.github.io/TasteTies-support/privacy-en.html">https://materi86.github.io/TasteTies-support/privacy-en.html</a></p>
+          <section><h2>1. SUMMARY</h2>
+          <p>TasteTies is a local-first app. Recipes, images, planning, shopping lists, settings, import history, timers, and other app data are normally stored in the app’s local database, local files, or local settings storage on the device.</p>
+          <p>The app is not purely offline. The following optional or user-initiated features may transfer data from the device:</p>
+          <p>• CloudKit synchronization and CloudKit sharing through the user’s iCloud account.<br>
+• Separate backup-file storage in iCloud Drive.<br>
+• Import from a URL and image downloads from a selected website.<br>
+• Export and sharing through the iOS share sheet, files, QR codes, or CloudKit links.<br>
+• Notifications and background synchronization that use Apple system services.<br>
+• Transfer of selected cooking, timer, or shopping information to a paired Apple Watch.</p>
+          <p>The app does not require an account with the developer and, in the production configuration reviewed here, contains no advertising or third-party analytics SDK. Apple, a website selected for import, or a service selected in the share sheet may still process data under its own terms.</p>
           </section>
-          <section>
-            <h2>Import, export and sharing</h2>
-            <p>When you import a URL, your device contacts that website directly. The site may receive your IP address, the requested URL and normal connection details. Image text recognition runs on your device. The app uses camera, photo, file and notification access when you use the relevant feature and grant the permissions required by iOS.</p>
-            <p>Exports and QR codes may contain recipe data, images or sharing links. Recipients and the services you select handle copies under their own terms.</p>
+          <section><h2>2. DATA STORED LOCALLY</h2>
+          <p>Depending on the features used, the app may store:</p>
+          <p>• Recipe data: title, description, ingredients, instructions, servings, times, category, difficulty, favourites, notes, source URL, and images.<br>
+• Cookbooks, categories, searches, and import history.<br>
+• Weekly planning, shopping lists, and checked status.<br>
+• Cooking sessions, timers, notification state, and local diagnostic/interaction logs.<br>
+• App settings such as language, theme, temperature and backup preferences, and whether CloudKit sync is enabled.<br>
+• Local backup, import, and export files.</p>
+          <p>Local storage includes SQLite, the app-sandboxed file system, and AsyncStorage. The operating system’s device and backup security applies to this storage.</p>
           </section>
-          <section>
-            <h2>Support and this website</h2>
-            <p>If you email support, we use your address, message and any attachments to respond and follow up. The legal basis is our legitimate interest in providing support and resolving problems. We keep correspondence for as long as needed to handle the issue, and longer only for legal obligations or claims. Microsoft Outlook handles support email. See <a href="https://privacy.microsoft.com/privacystatement">Microsoft’s Privacy Statement</a>.</p>
-            <p>GitHub Pages hosts this website and logs visitor IP addresses for security. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s Privacy Statement</a> for information including retention and international transfers. The site has no analytics, advertising or contact forms. Your theme preference is stored locally in your browser.</p>
+          <section><h2>3. CLOUDKIT SYNCHRONIZATION</h2>
+          <p>CloudKit sync is off by default and begins only after an explicit choice in Settings. When enabled, the app may store the following in its iCloud container:</p>
+          <p>• Recipe fields such as title, description, servings, times, difficulty, category, ingredients, instructions, favourite status, import source/source URL, timestamps, and an associated image.<br>
+• Identifiers and metadata needed for sync, zones, sharing, conflict handling, and deletion.<br>
+• Shopping items such as name, amount, unit, category, source, reference, checked status, and timestamps.</p>
+          <p>Data is stored in the user’s private CloudKit database or, when a user creates or accepts a share, in CloudKit structures available to share participants according to their permissions. The app does not use the public CloudKit database for ordinary recipe sync.</p>
+          <p>Turning CloudKit off stops new sync operations and background subscriptions in the app. Turning it off is not the same as automatically deleting everything already stored in iCloud. Delete content while sync remains enabled or use available app/iCloud controls before disabling the service if cloud copies should be removed.</p>
           </section>
-          <section>
-            <h2>Purpose, retention and your rights</h2>
-            <p>TasteTies processes data to provide the functions you choose. When processing personal data is necessary to provide the app or a feature you request, the legal basis is performance of the contract with you. You choose whether to enable cloud features.</p>
-            <p>Local data normally remains until you delete it, reset app data or uninstall the app. System backups, iCloud data, exported files and shared copies must be managed separately. CloudKit and iCloud Drive backups also need to be managed separately from each other.</p>
-            <p>Contact <a href="mailto:taste-ties@hotmail.com">taste-ties@hotmail.com</a> to ask about access, correction, deletion, restriction, portability or objecting to processing based on legitimate interests. Your rights depend on the processing involved. You may lodge a complaint with the <a href="https://www.imy.se/en/">Swedish Authority for Privacy Protection</a>.</p>
+          <section><h2>4. ICLOUD DRIVE BACKUPS</h2>
+          <p>iCloud Drive backup is separate from CloudKit sync. It remains off until the user enables it. When used, the app creates a backup file from the local database and copies it to the app’s documents area in iCloud Drive. A backup may contain recipes, related tables, cookbooks, categories, shopping lists, planning, settings, history, and other database records present at the time of backup. The backup contains database records. Image files, meal plans stored outside the database and drafts are omitted.</p>
+          <p>Automatic local backups are rotated according to the selected setting. Copies in iCloud are also subject to the user’s iCloud storage and Apple’s handling. CloudKit sync and iCloud Drive backup must be considered, enabled, and deleted separately.</p>
+          </section>
+          <section><h2>5. IMPORT FROM WEB, FILE, IMAGE, AND QR</h2>
+          <p>For URL import, the device sends network requests to the address supplied by the user and may retrieve page content and images. The website and its infrastructure may receive an IP address, request time, requested URL, and ordinary network/HTTP information. TasteTies does not control that website’s logging, cookies, or subsequent processing.</p>
+          <p>ZIP, text, image, and QR imports are processed in the app after the user selects or scans the material. Camera, photo, and file access is used only after the relevant feature is initiated and iOS access is granted. Imported content is stored as a recipe only after the user approves or saves it, although import history and temporary files may be created to perform and troubleshoot the flow.</p>
+          </section>
+          <section><h2>6. EXPORT AND SHARING</h2>
+          <p>Exports may contain recipe fields, images, and metadata in ZIP format. The app does not promise end-to-end encryption for export files. After a recipient or service is selected in the iOS share sheet, a copy leaves the app’s control and is processed by that recipient or service.</p>
+          <p>A QR code may carry recipe data directly or contain a CloudKit share link. Anyone receiving the QR code or link may gain access according to the selected sharing method. CloudKit shares may give participants read or write permission. Share only with trusted people and revoke sharing through available Apple or in-app sharing controls.</p>
+          </section>
+          <section><h2>7. APPLE WATCH AND NOTIFICATIONS</h2>
+          <p>The app may transfer selected recipe, cooking, timer, or shopping information to a paired Apple Watch through Apple WatchConnectivity. Timer and sync notifications use Apple notification and background services. Notification permission can be changed in iOS Settings. CloudKit may use silent push notifications to signal that remote data changed; recipe content is then fetched through CloudKit.</p>
+          </section>
+          <section><h2>8. RECIPIENTS AND EXTERNAL SERVICES</h2>
+          <p>Depending on user choices, data may be processed by:</p>
+          <p>• Apple for iCloud, CloudKit, iCloud Drive, push notifications, WatchConnectivity, and operating-system sharing functions.<br>
+• Participants invited to a CloudKit share.<br>
+• Websites explicitly selected for import.<br>
+• Apps, people, or storage services selected for export and sharing.</p>
+          <p>Under the current implementation, TasteTies operates no custom backend that collects recipe content and sends no app usage to an advertising or third-party analytics system. This statement must be reassessed if new SDKs or network services are added.</p>
+          </section>
+          <section><h2>9. RETENTION AND DELETION</h2>
+          <p>Local data remains until deleted in the app, app data is reset, or the app is uninstalled, subject to device or system backups. Automatic local backups are retained according to the selected retention setting. Exported copies and files shared to other services must be deleted where they are stored.</p>
+          <p>CloudKit records remain until deleted or removed through the applicable CloudKit/sharing flow. Leaving a share, stopping sync, and deleting a local copy are different actions. iCloud Drive backups remain until deleted or rotated through backup/iCloud management.</p>
+          </section>
+          <section><h2>10. SECURITY AND USER CHOICES</h2>
+          <p>The app uses the iOS app sandbox, local database functions, and Apple permission and iCloud APIs. No technical solution can guarantee absolute security. Protect the device and Apple account, keep iOS current, and do not share unencrypted export files with unauthorized people.</p>
+          <p>The app can be used without CloudKit sync. Local backup can also be used without iCloud Drive. URL import, cloud functions, some sharing, and sync require a network connection.</p>
+          </section>
+          <section><h2>11. CHILDREN AND SENSITIVE CONTENT</h2>
+          <p>The app is not designed for targeted advertising or profiling of children. Recipes, images, notes, and shares may nevertheless contain personal data entered by a user. Do not enter sensitive data or another person’s data unless entitled to process and share it.</p>
+          </section>
+          <section><h2>12. RIGHTS AND CONTACT</h2>
+          <p>Users can view, edit, export, and delete much of their content directly in the app. Data held by Apple or another selected service may also require use of that service’s controls. Apple states that a general Apple data export may not include data held in third-party CloudKit containers, making the app’s own export and deletion functions important.</p>
+          <p>Depending on the processing, you have rights to information, access, correction, deletion, restriction and portability. You may object to processing based on legitimate interests and withdraw consent where used. Email us to exercise your rights. You may complain to the Swedish Authority for Privacy Protection.</p>
+          <p>Contact: <a href="mailto:taste-ties@hotmail.com">taste-ties@hotmail.com</a><br>
+Swedish Authority for Privacy Protection: <a href="https://www.imy.se">https://www.imy.se</a></p>
+          </section>
+          <section><h2>13. CHANGES</h2>
+          <p>This policy must be updated when the data model, cloud features, external services, or legal circumstances change. Dates and version information must be updated in the app and public policy before a new release.</p>
+          </section>
+          <section><h2>14. SUPPORT AND WEBSITE</h2>
+          <p>When you contact <a href="mailto:taste-ties@hotmail.com">taste-ties@hotmail.com</a>, Mattias Isberg processes your email address, message and attachments you choose to send to respond and follow up. The legal basis is our legitimate interest in providing support and resolving problems. Correspondence is kept for as long as needed to handle the issue, and longer only for a legal obligation or claim. Microsoft Outlook handles support email. Microsoft Privacy Statement: <a href="https://privacy.microsoft.com/privacystatement">https://privacy.microsoft.com/privacystatement</a></p>
+          <p>The website uses GitHub Pages. GitHub logs visitor IP addresses for security. The site has no analytics, advertising or contact forms. Your theme preference is stored locally in your browser. GitHub Privacy Statement, including international transfers: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement</a></p>
+          </section>
+          <section><h2>15. PURPOSE AND LEGAL BASIS</h2>
+          <p>The app processes data to provide the functions you choose. When processing personal data is necessary to provide the app or a feature you request, the legal basis is performance of the contract with you. You choose whether to enable cloud features. Apple and other selected services process information under their terms. Apple Privacy Policy: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></p>
           </section>
         </div>
       </article>

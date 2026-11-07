@@ -6,6 +6,7 @@
   <meta name="description" content="Så hanterar TasteTies uppgifter i appen, på supportsidan och när du kontaktar supporten.">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#F7F5EF">
+  <link rel="canonical" href="https://materi86.github.io/TasteTies-support/privacy.html">
   <title>Integritetspolicy – TasteTies</title>
 
   <link rel="icon" type="image/png" href="assets/app-icon.png">
@@ -52,101 +53,90 @@
           <p class="policy-meta">Uppdaterad 7 november 2026 · <a href="privacy-en.html" hreflang="en" lang="en">English</a></p>
         </header>
 
-        <dl class="legal-identity">
-          <div><dt>Personuppgiftsansvarig</dt><dd>Mattias Isberg</dd></div>
-          <div><dt>E-post</dt><dd><a href="mailto:taste-ties@hotmail.com">taste-ties@hotmail.com</a></dd></div>
-          <div><dt>Postadress</dt><dd>Gulmåravägen 6, Gråbo, Sverige</dd></div>
-        </dl>
-
         <div class="policy-content">
-          <section>
-            <h2>1. Sammanfattning</h2>
-            <p>TasteTies är en lokal-först-app. Recept, bilder, planering, inköpslistor, inställningar, importhistorik, timers och annan appdata lagras normalt i appens lokala databas, lokala filer eller inställningslager på enheten.</p>
-            <p>Appen är inte en ren offlineapp. CloudKit-synk, CloudKit-delning, iCloud Drive-backup, URL-import, export, notiser och Apple Watch-funktioner kan överföra data när du väljer eller aktiverar dem.</p>
-            <p>TasteTies har ingen egen kontoregistrering och använder enligt nu granskad produktionskonfiguration inga annons- eller tredjepartsanalys-SDK:er. Apple, webbplatser du importerar från och tjänster du väljer vid delning kan behandla data enligt sina egna villkor.</p>
+          <p>KONTAKTUPPGIFTER<br>
+Personuppgiftsansvarig/utvecklare: Mattias Isberg<br>
+E-post: <a href="mailto:taste-ties@hotmail.com">taste-ties@hotmail.com</a><br>
+Postadress: Gulmåravägen 6, Gråbo, Sverige<br>
+Publik integritetspolicy: <a href="https://materi86.github.io/TasteTies-support/privacy.html">https://materi86.github.io/TasteTies-support/privacy.html</a></p>
+          <section><h2>1. SAMMANFATTNING</h2>
+          <p>TasteTies är en lokal-först-app. Recept, bilder, planering, inköpslistor, inställningar, importhistorik, timers och annan appdata lagras normalt i appens lokala databas, lokala filer eller lokala inställningslager på enheten.</p>
+          <p>Appen är inte en ren offlineapp. Följande valbara eller användarinitierade funktioner kan överföra data från enheten:</p>
+          <p>• CloudKit-synk och CloudKit-delning via användarens iCloud-konto.<br>
+• Separat säkerhetskopiering av backupfiler till iCloud Drive.<br>
+• Import från en URL och hämtning av bilder från en angiven webbplats.<br>
+• Export och delning via iOS delningsruta, filer, QR-koder eller CloudKit-länkar.<br>
+• Notiser och bakgrundssynk som använder Apples systemtjänster.<br>
+• Överföring av vald matlagnings-, timer- eller inköpsinformation till en parad Apple Watch.</p>
+          <p>Appen har ingen egen kontoregistrering och använder enligt den nu granskade produktionskonfigurationen inga annons- eller tredjepartsanalys-SDK:er. Detta hindrar inte att Apple, en webbplats som användaren importerar från eller en tjänst som användaren väljer i delningsrutan behandlar data enligt sina egna villkor.</p>
           </section>
-
-          <section>
-            <h2>2. Data som lagras lokalt</h2>
-            <p>Beroende på vilka funktioner du använder kan appen lagra:</p>
-            <ul>
-              <li>Receptdata, bilder, käll-URL:er, receptböcker, kategorier, sökningar och importhistorik.</li>
-              <li>Veckoplanering, inköpslistor och avbockningsstatus.</li>
-              <li>Matlagningssessioner, timers, notisstatus och lokala diagnostik- eller interaktionsloggar.</li>
-              <li>Språk, tema, backupinställningar, CloudKit-val samt lokala backup-, import- och exportfiler.</li>
-            </ul>
-            <p>Den lokala lagringen använder bland annat SQLite, appens sandlådefilsystem och lokala inställningslager. Operativsystemets enhets- och backupsäkerhet gäller för denna lagring.</p>
+          <section><h2>2. DATA SOM LAGRAS LOKALT</h2>
+          <p>Beroende på vilka funktioner du använder kan appen lagra:</p>
+          <p>• Receptdata: titel, beskrivning, ingredienser, instruktioner, portioner, tider, kategori, svårighetsgrad, favoriter, anteckningar, käll-URL och bilder.<br>
+• Receptböcker, kategorier, sökningar och importhistorik.<br>
+• Veckoplanering, inköpslistor och avbockningsstatus.<br>
+• Matlagningssessioner, timers, notisstatus och lokala diagnostik-/interaktionsloggar.<br>
+• Appinställningar, till exempel språk, tema, temperatur- och backupinställningar samt om CloudKit-synk är aktiverad.<br>
+• Lokala backup-, import- och exportfiler.</p>
+          <p>Den lokala lagringen använder bland annat SQLite, appens sandboxade filsystem och AsyncStorage. Operativsystemets enhets- och backupsäkerhet gäller för denna lagring.</p>
           </section>
-
-          <section>
-            <h2>3. CloudKit-synk och delning</h2>
-            <p>CloudKit-synk är avstängd som standard och startar efter ett uttryckligt val i Inställningar. När synk är aktiverad kan recept, bilder, inköpsposter, identifierare, tidsstämplar samt metadata för synk, konfliktbehandling, delning och radering lagras i appens iCloud-container.</p>
-            <p>Data lagras normalt i din privata CloudKit-databas. När du accepterar eller skapar en delning blir det delade innehållet tillgängligt för deltagare enligt de behörigheter som valts. Appen använder inte den publika CloudKit-databasen för normal receptsynk.</p>
-            <p>Att stänga av CloudKit stoppar nya synkoperationer i appen, men raderar inte automatiskt data som redan lagrats i iCloud.</p>
+          <section><h2>3. CLOUDKIT-SYNK</h2>
+          <p>CloudKit-synk är avstängd som standard och startar först efter ett uttryckligt val i Inställningar. När synk är aktiverad kan appen lagra följande i appens iCloud-container:</p>
+          <p>• Receptfält såsom titel, beskrivning, portioner, tider, svårighetsgrad, kategori, ingredienser, instruktioner, favoritstatus, importkälla/käll-URL, tidsstämplar och tillhörande bild.<br>
+• Identifierare och metadata som behövs för synk, zoner, delning, konfliktbehandling och radering.<br>
+• Inköpsposter såsom namn, mängd, enhet, kategori, källa, referens, avbockningsstatus och tidsstämplar.</p>
+          <p>Data lagras i användarens privata CloudKit-databas eller, när användaren accepterar eller skapar en delning, i CloudKit-strukturer som är tillgängliga för sharets deltagare enligt deras behörigheter. Appen använder inte den publika CloudKit-databasen för normal receptsynk.</p>
+          <p>Att stänga av CloudKit stoppar nya synkoperationer och bakgrundsprenumerationer i appen. Avstängning är inte samma sak som att automatiskt radera allt som redan har lagrats i iCloud. Radera innehåll medan synk fortfarande är aktiv eller använd tillgängliga iCloud-/appfunktioner innan du stänger av tjänsten om du vill ta bort molnkopior.</p>
           </section>
-
-          <section>
-            <h2>4. iCloud Drive-säkerhetskopiering</h2>
-            <p>iCloud Drive-backup är separat från CloudKit-synk och aktiveras av användaren. Backupfilen innehåller databasposter, exempelvis recept och inköpslistor. Bildfiler, veckoplaner som ligger utanför databasen och utkast följer inte med.</p>
-            <p>CloudKit-synk och iCloud Drive-backup måste aktiveras, hanteras och raderas var för sig. Kopior i iCloud omfattas även av Apples och användarens iCloud-hantering.</p>
+          <section><h2>4. ICLOUD DRIVE-SÄKERHETSKOPIERING</h2>
+          <p>iCloud Drive-backup är separat från CloudKit-synk. Funktionen är avstängd tills användaren aktiverar den. När den används skapar appen en backupfil av den lokala databasen och kopierar filen till appens dokumentområde i iCloud Drive. En sådan backup kan innehålla recept, relaterade tabeller, receptböcker, kategorier, inköpslistor, planering, inställningar, historik och andra poster som ingår i databasen vid backuptillfället. Backupen innehåller databasposter. Bildfiler, veckoplaner som lagras utanför databasen och utkast följer inte med.</p>
+          <p>Lokala automatiska backuper roteras enligt vald inställning. Kopior i iCloud omfattas även av användarens iCloud-lagring och Apples hantering. CloudKit-synk och iCloud Drive-backup måste bedömas, aktiveras och raderas var för sig.</p>
           </section>
-
-          <section>
-            <h2>5. Import från webben, filer, bilder och QR</h2>
-            <p>Vid URL-import gör enheten nätverksanrop direkt till den adress du anger. Webbplatsen och dess infrastruktur kan då ta emot IP-adress, tidpunkt, begärd URL och vanliga nätverks- eller HTTP-uppgifter. TasteTies driver ingen mellanliggande importserver och styr inte webbplatsens loggning, cookies eller fortsatta behandling.</p>
-            <p>ZIP-, text-, bild- och QR-import behandlas i appen efter att du valt eller skannat materialet. Kamera, bilder och filer används när du initierar funktionen och beviljar den åtkomst som iOS kräver. OCR-textigenkänning behandlas på enheten.</p>
+          <section><h2>5. IMPORT FRÅN WEBB, FIL, BILD OCH QR</h2>
+          <p>När du importerar från en URL gör enheten nätverksanrop till den adress du anger och kan hämta sidinnehåll och bilder. Webbplatsen och dess infrastruktur kan då ta emot exempelvis IP-adress, tidpunkt, begärd URL och vanliga nätverks-/HTTP-uppgifter. TasteTies styr inte webbplatsens loggning, cookies eller fortsatta behandling.</p>
+          <p>ZIP-, text-, bild- och QR-import behandlas i appen efter att du valt eller skannat materialet. Kamera, bilder och filer används bara efter att du initierat motsvarande funktion och beviljat den åtkomst som iOS kräver. Importerat innehåll sparas lokalt först när du godkänner eller sparar resultatet, men importhistorik och tillfälliga filer kan skapas för att genomföra och felsöka flödet.</p>
           </section>
-
-          <section>
-            <h2>6. Export och delning</h2>
-            <p>Exportfiler kan innehålla receptfält, bilder, käll-URL:er och metadata och är inte utlovat totalsträckskrypterade av appen. När du väljer en mottagare eller tjänst i iOS delningsruta lämnar en kopia appens kontroll.</p>
-            <p>QR-koder kan bära receptdata eller innehålla en CloudKit-länk. Den som får QR-koden eller länken kan få åtkomst enligt valt delningssätt. Dela endast med personer du litar på.</p>
+          <section><h2>6. EXPORT OCH DELNING</h2>
+          <p>Export kan innehålla receptfält, bilder och metadata i ZIP-format. Exportfiler är inte utlovat totalsträckskrypterade av appen. När du väljer en mottagare eller tjänst i iOS delningsruta lämnar en kopia appens kontroll och behandlas av den mottagaren eller tjänsten.</p>
+          <p>QR-delning kan antingen bära receptdata direkt i koden eller innehålla en CloudKit-delningslänk. Den som får QR-koden eller länken kan få åtkomst enligt valt delningssätt. CloudKit-delningar kan ge deltagare läs- eller skrivbehörighet. Dela endast med personer du litar på och återkalla delningar genom Apples eller appens tillgängliga delningskontroller.</p>
           </section>
-
-          <section>
-            <h2>7. Apple Watch, notiser och systemtjänster</h2>
-            <p>Appen kan skicka vald recept-, matlagnings-, timer- eller inköpsinformation till en parad Apple Watch via WatchConnectivity. Timer- och synknotiser använder Apples notis- och bakgrundstjänster. CloudKit kan använda tysta pushnotiser för att meddela att fjärrdata har ändrats.</p>
-            <p>Kamera-, bild- och notisbehörigheter kan ändras i iOS-inställningarna. Den berörda funktionen kan då bli otillgänglig.</p>
+          <section><h2>7. APPLE WATCH OCH NOTISER</h2>
+          <p>Appen kan skicka vald recept-, matlagnings-, timer- eller inköpsinformation till en parad Apple Watch via Apples WatchConnectivity. Timer- och synknotiser använder Apples notis- och bakgrundstjänster. Notisbehörighet kan ändras i iOS-inställningarna. CloudKit kan använda tysta pushnotiser för att tala om att fjärrdata har ändrats; själva receptinnehållet hämtas därefter via CloudKit.</p>
           </section>
-
-          <section>
-            <h2>8. Mottagare och externa tjänster</h2>
-            <p>Beroende på dina val kan data behandlas av Apple för iCloud, CloudKit, iCloud Drive, pushnotiser, WatchConnectivity, StoreKit och delningsfunktioner; av deltagare i en CloudKit-delning; av webbplatser du importerar från; samt av appar, personer eller lagringstjänster du väljer vid export. Läs mer i <a href="https://www.apple.com/legal/privacy/">Apples integritetspolicy</a>.</p>
-            <p>Supportsidan använder inga analysverktyg, annonser eller kontaktformulär. GitHub Pages tillhandahåller webbplatsen och loggar besökarens IP-adress av säkerhetsskäl. Se <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubs integritetsinformation</a> om bland annat lagring och internationella överföringar. Sidan sparar ditt temaval lokalt i webbläsaren.</p>
+          <section><h2>8. MOTTAGARE OCH EXTERNA TJÄNSTER</h2>
+          <p>Beroende på dina val kan data behandlas av:</p>
+          <p>• Apple för iCloud, CloudKit, iCloud Drive, pushnotiser, WatchConnectivity och operativsystemets delningsfunktioner.<br>
+• Deltagare som du bjuder in till en CloudKit-delning.<br>
+• Webbplatser som du uttryckligen väljer att importera från.<br>
+• Appar, personer eller lagringstjänster som du väljer vid export och delning.</p>
+          <p>TasteTies driver enligt nuvarande implementation ingen egen backend för att samla in receptinnehåll och skickar inte appanvändning till något annonserings- eller tredjepartsanalyssystem. Detta påstående måste omprövas om nya SDK:er eller nätverkstjänster läggs till.</p>
           </section>
-
-          <section>
-            <h2>9. Support, ändamål och rättslig grund</h2>
-            <p>Appen hanterar data för att ge dig de funktioner du väljer. När behandling av personuppgifter är nödvändig för att tillhandahålla appen eller en funktion som du begär är den rättsliga grunden att fullgöra avtalet med dig. Du väljer själv om du vill aktivera molnfunktionerna.</p>
-            <p>När du mejlar oss använder vi avsändaradressen, meddelandet och bilagor du väljer att skicka för att besvara och följa upp ärendet. Vårt berättigade intresse är att hjälpa användare och hantera fel. Supportmejlen hanteras via Microsoft Outlook. Se <a href="https://privacy.microsoft.com/privacystatement">Microsofts integritetsinformation</a>. Vi behåller supportärenden så länge de behövs för att hantera ärendet och därefter bara om det behövs för en rättslig skyldighet eller ett rättsligt anspråk.</p>
+          <section><h2>9. LAGRINGSTID OCH RADERING</h2>
+          <p>Lokal data finns kvar tills du raderar den i appen, återställer appdata eller avinstallerar appen, med de undantag som följer av enhets- eller systembackup. Automatiska lokala backuper sparas enligt vald retention. Exporterade kopior och filer som delats till andra tjänster måste raderas där de lagras.</p>
+          <p>CloudKit-poster finns kvar tills de raderas eller tas bort enligt CloudKit-/delningsflödet. Att lämna en delning, stoppa synk och radera en lokal kopia är olika åtgärder. iCloud Drive-backuper finns kvar tills de raderas eller roteras i iCloud/appens backuphantering.</p>
           </section>
-
-          <section>
-            <h2>10. Lagringstid och radering</h2>
-            <p>Lokal data finns kvar tills du raderar den i appen, återställer appdata eller avinstallerar appen, med reservation för enhets- och systembackuper. CloudKit-poster finns kvar tills de raderas genom tillgängliga app- eller iCloud-flöden. iCloud Drive-backuper finns kvar tills de raderas eller roteras.</p>
-            <p>Avinstallation raderar normalt appens lokala data från enheten, men raderar inte nödvändigtvis CloudKit-data, iCloud Drive-backuper, systembackuper, exporterade filer eller kopior som redan har delats. Dessa måste hanteras separat.</p>
+          <section><h2>10. SÄKERHET OCH DINA VAL</h2>
+          <p>Appen använder iOS app-sandbox, lokala databasfunktioner och Apples behörighets- och iCloud-API:er. Ingen teknisk lösning kan garantera absolut säkerhet. Skydda enheten och Apple-kontot, håll iOS uppdaterat och dela inte okrypterade exportfiler med obehöriga.</p>
+          <p>Du kan använda appen utan CloudKit-synk. Du kan också använda lokal backup utan iCloud Drive. URL-import, molnfunktioner, vissa delningar och synk kräver nätverk.</p>
           </section>
-
-          <section>
-            <h2>11. Säkerhet och dina val</h2>
-            <p>Appen använder iOS app-sandbox, lokala databasfunktioner och Apples behörighets- och iCloud-API:er. Ingen teknisk lösning kan garantera absolut säkerhet. Skydda enheten och Apple-kontot, håll iOS uppdaterat och dela inte exportfiler med obehöriga.</p>
-            <p>Du kan använda de lokala kärnfunktionerna utan CloudKit. URL-import, molnfunktioner, StoreKit och vissa delningar kräver nätverk.</p>
+          <section><h2>11. BARN OCH KÄNSLIGT INNEHÅLL</h2>
+          <p>Appen är inte utformad för riktad profilering eller annonsering till barn. Recept, bilder, anteckningar och delningar kan ändå innehålla personuppgifter som användaren själv lägger in. Lägg inte in känsliga eller andra personers uppgifter om du saknar rätt att behandla eller dela dem.</p>
           </section>
-
-          <section>
-            <h2>12. Barn och känsligt innehåll</h2>
-            <p>Appen är inte utformad för riktad profilering eller annonsering till barn. Recept, bilder, anteckningar och delningar kan ändå innehålla personuppgifter som användaren själv lägger in. Lägg inte in känsliga eller andra personers uppgifter om du saknar rätt att behandla eller dela dem.</p>
+          <section><h2>12. DINA RÄTTIGHETER OCH KONTAKT</h2>
+          <p>Du kan se, redigera, exportera och radera mycket av innehållet direkt i appen. För data hos Apple eller en vald extern tjänst kan du även behöva använda den tjänstens kontroller. Apple anger att en allmän Apple-dataexport inte nödvändigtvis omfattar data i tredjeparts CloudKit-containrar; appens egen export och radering är därför viktiga.</p>
+          <p>Beroende på behandlingen har du rätt till information, tillgång, rättelse, radering, begränsning och dataportabilitet. Du kan invända mot behandling som bygger på berättigat intresse och återkalla samtycke där det används. Kontakta oss via e-post för att utöva dina rättigheter. Du kan klaga hos Integritetsskyddsmyndigheten.</p>
+          <p>Kontakt: <a href="mailto:taste-ties@hotmail.com">taste-ties@hotmail.com</a><br>
+Integritetsskyddsmyndigheten: <a href="https://www.imy.se">https://www.imy.se</a></p>
           </section>
-
-          <section>
-            <h2>13. Dina rättigheter och kontakt</h2>
-            <p>Du kan se, redigera, exportera och radera mycket av innehållet direkt i appen. För data hos Apple eller en vald extern tjänst kan du även behöva använda den tjänstens kontroller.</p>
-            <p>Kontakta <a href="mailto:taste-ties@hotmail.com">taste-ties@hotmail.com</a> för frågor eller för att begära tillgång, rättelse, radering, begränsning eller dataportabilitet, eller för att invända mot behandling som bygger på berättigat intresse. Vilka rättigheter som gäller beror på behandlingen. Du kan klaga hos <a href="https://www.imy.se">Integritetsskyddsmyndigheten</a>.</p>
+          <section><h2>13. ÄNDRINGAR</h2>
+          <p>Policyn ska uppdateras när datamodell, molnfunktioner, tredjepartstjänster eller rättsliga förutsättningar ändras. Datum och versionsinformation ska uppdateras i appen och i den publika policyn innan en ny version släpps.</p>
           </section>
-
-          <section>
-            <h2>14. Ändringar</h2>
-            <p>Policyn uppdateras när datamodell, molnfunktioner, tredjepartstjänster eller rättsliga förutsättningar ändras. Uppdateringsdatumet ska ändras när en ny version publiceras.</p>
+          <section><h2>14. SUPPORT OCH WEBBPLATS</h2>
+          <p>När du kontaktar <a href="mailto:taste-ties@hotmail.com">taste-ties@hotmail.com</a> behandlar Mattias Isberg din e-postadress, ditt meddelande och bilagor som du väljer att skicka för att besvara och följa upp ärendet. Rättslig grund är vårt berättigade intresse av att ge support och hantera fel. Ärendet sparas så länge det behövs för att hantera frågan, och därefter bara för en rättslig skyldighet eller ett rättsligt anspråk. Supportmejlen hanteras via Microsoft Outlook. Microsofts integritetsinformation: <a href="https://privacy.microsoft.com/privacystatement">https://privacy.microsoft.com/privacystatement</a></p>
+          <p>Webbplatsen använder GitHub Pages. GitHub loggar besökarnas IP-adresser av säkerhetsskäl. Webbplatsen har inga analysverktyg, annonser eller kontaktformulär. Ditt temaval sparas lokalt i webbläsaren. GitHubs integritetsinformation, inklusive internationella överföringar: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement</a></p>
+          </section>
+          <section><h2>15. ÄNDAMÅL OCH RÄTTSLIG GRUND</h2>
+          <p>Appen hanterar data för att ge dig de funktioner du väljer. När behandling av personuppgifter är nödvändig för att tillhandahålla appen eller en funktion som du begär är den rättsliga grunden att fullgöra avtalet med dig. Du väljer själv om du vill aktivera molnfunktionerna. Apple och andra tjänster du väljer behandlar uppgifter enligt sina villkor. Apples integritetspolicy: <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></p>
           </section>
         </div>
       </article>
