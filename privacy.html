@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sv" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Så hanterar TasteTies uppgifter i appen, på supportsidan och när du kontaktar supporten.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#F7F5EF">
+  <title>Integritetspolicy – TasteTies</title>
+
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="privacy">
+  <a class="skip-link" href="#main-content">Hoppa till innehållet</a>
+
+  <header class="site-header" id="main-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="TasteTies support – startsida">
+        <img src="assets/app-icon.png" alt="" class="logo-img" width="44" height="44">
+        <span>TasteTies</span>
+        <span class="logo-context">Support</span>
+      </a>
+      <nav aria-label="Huvudnavigation" id="main-nav">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html#hjalpomraden">Hjälpområden</a></li>
+          <li><a href="index.html#vanliga-fragor">Vanliga frågor</a></li>
+          <li><a href="index.html#kontakt">Kontakt</a></li>
+          <li><a href="privacy.html" aria-current="page">Integritet</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-button theme-toggle" type="button" aria-label="Byt till mörkt läge">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.3 2a10 10 0 0 0-1.9 19.5A10 10 0 0 0 22 9.7 10 10 0 0 1 12.3 2Z"/></svg>
+          <span class="theme-label">Mörkt läge</span>
+        </button>
+        <button id="mobile-toggle" class="icon-button mobile-menu-toggle" type="button" aria-label="Öppna meny" aria-controls="main-nav" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="policy-page" id="main-content" tabindex="-1">
+    <div class="container policy-shell">
+      <a href="index.html" class="back-link"><span aria-hidden="true">←</span> Tillbaka till support</a>
+
+      <article class="policy-card">
+        <header class="policy-header">
+          <p class="page-label">Juridisk information</p>
+          <h1>Integritetspolicy</h1>
+          <p class="policy-meta">Uppdaterad 7 november 2026 · <a href="privacy-en.html" hreflang="en" lang="en">English</a></p>
+        </header>
+
+        <dl class="legal-identity">
+          <div><dt>Personuppgiftsansvarig</dt><dd>Mattias Isberg</dd></div>
+          <div><dt>E-post</dt><dd><a href="mailto:taste-ties@hotmail.com">taste-ties@hotmail.com</a></dd></div>
+          <div><dt>Postadress</dt><dd>Gulmåravägen 6, Gråbo, Sverige</dd></div>
+        </dl>
+
+        <div class="policy-content">
+          <section>
+            <h2>1. Sammanfattning</h2>
+            <p>TasteTies är en lokal-först-app. Recept, bilder, planering, inköpslistor, inställningar, importhistorik, timers och annan appdata lagras normalt i appens lokala databas, lokala filer eller inställningslager på enheten.</p>
+            <p>Appen är inte en ren offlineapp. CloudKit-synk, CloudKit-delning, iCloud Drive-backup, URL-import, export, notiser och Apple Watch-funktioner kan överföra data när du väljer eller aktiverar dem.</p>
+            <p>TasteTies har ingen egen kontoregistrering och använder enligt nu granskad produktionskonfiguration inga annons- eller tredjepartsanalys-SDK:er. Apple, webbplatser du importerar från och tjänster du väljer vid delning kan behandla data enligt sina egna villkor.</p>
+          </section>
+
+          <section>
+            <h2>2. Data som lagras lokalt</h2>
+            <p>Beroende på vilka funktioner du använder kan appen lagra:</p>
+            <ul>
+              <li>Receptdata, bilder, käll-URL:er, receptböcker, kategorier, sökningar och importhistorik.</li>
+              <li>Veckoplanering, inköpslistor och avbockningsstatus.</li>
+              <li>Matlagningssessioner, timers, notisstatus och lokala diagnostik- eller interaktionsloggar.</li>
+              <li>Språk, tema, backupinställningar, CloudKit-val samt lokala backup-, import- och exportfiler.</li>
+            </ul>
+            <p>Den lokala lagringen använder bland annat SQLite, appens sandlådefilsystem och lokala inställningslager. Operativsystemets enhets- och backupsäkerhet gäller för denna lagring.</p>
+          </section>
+
+          <section>
+            <h2>3. CloudKit-synk och delning</h2>
+            <p>CloudKit-synk är avstängd som standard och startar efter ett uttryckligt val i Inställningar. När synk är aktiverad kan recept, bilder, inköpsposter, identifierare, tidsstämplar samt metadata för synk, konfliktbehandling, delning och radering lagras i appens iCloud-container.</p>
+            <p>Data lagras normalt i din privata CloudKit-databas. När du accepterar eller skapar en delning blir det delade innehållet tillgängligt för deltagare enligt de behörigheter som valts. Appen använder inte den publika CloudKit-databasen för normal receptsynk.</p>
+            <p>Att stänga av CloudKit stoppar nya synkoperationer i appen, men raderar inte automatiskt data som redan lagrats i iCloud.</p>
+          </section>
+
+          <section>
+            <h2>4. iCloud Drive-säkerhetskopiering</h2>
+            <p>iCloud Drive-backup är separat från CloudKit-synk och aktiveras av användaren. Backupfilen innehåller databasposter, exempelvis recept och inköpslistor. Bildfiler, veckoplaner som ligger utanför databasen och utkast följer inte med.</p>
+            <p>CloudKit-synk och iCloud Drive-backup måste aktiveras, hanteras och raderas var för sig. Kopior i iCloud omfattas även av Apples och användarens iCloud-hantering.</p>
+          </section>
+
+          <section>
+            <h2>5. Import från webben, filer, bilder och QR</h2>
+            <p>Vid URL-import gör enheten nätverksanrop direkt till den adress du anger. Webbplatsen och dess infrastruktur kan då ta emot IP-adress, tidpunkt, begärd URL och vanliga nätverks- eller HTTP-uppgifter. TasteTies driver ingen mellanliggande importserver och styr inte webbplatsens loggning, cookies eller fortsatta behandling.</p>
+            <p>ZIP-, text-, bild- och QR-import behandlas i appen efter att du valt eller skannat materialet. Kamera, bilder och filer används när du initierar funktionen och beviljar den åtkomst som iOS kräver. OCR-textigenkänning behandlas på enheten.</p>
+          </section>
+
+          <section>
+            <h2>6. Export och delning</h2>
+            <p>Exportfiler kan innehålla receptfält, bilder, käll-URL:er och metadata och är inte utlovat totalsträckskrypterade av appen. När du väljer en mottagare eller tjänst i iOS delningsruta lämnar en kopia appens kontroll.</p>
+            <p>QR-koder kan bära receptdata eller innehålla en CloudKit-länk. Den som får QR-koden eller länken kan få åtkomst enligt valt delningssätt. Dela endast med personer du litar på.</p>
+          </section>
+
+          <section>
+            <h2>7. Apple Watch, notiser och systemtjänster</h2>
+            <p>Appen kan skicka vald recept-, matlagnings-, timer- eller inköpsinformation till en parad Apple Watch via WatchConnectivity. Timer- och synknotiser använder Apples notis- och bakgrundstjänster. CloudKit kan använda tysta pushnotiser för att meddela att fjärrdata har ändrats.</p>
+            <p>Kamera-, bild- och notisbehörigheter kan ändras i iOS-inställningarna. Den berörda funktionen kan då bli otillgänglig.</p>
+          </section>
+
+          <section>
+            <h2>8. Mottagare och externa tjänster</h2>
+            <p>Beroende på dina val kan data behandlas av Apple för iCloud, CloudKit, iCloud Drive, pushnotiser, WatchConnectivity, StoreKit och delningsfunktioner; av deltagare i en CloudKit-delning; av webbplatser du importerar från; samt av appar, personer eller lagringstjänster du väljer vid export. Läs mer i <a href="https://www.apple.com/legal/privacy/">Apples integritetspolicy</a>.</p>
+            <p>Supportsidan använder inga analysverktyg, annonser eller kontaktformulär. GitHub Pages tillhandahåller webbplatsen och loggar besökarens IP-adress av säkerhetsskäl. Se <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubs integritetsinformation</a> om bland annat lagring och internationella överföringar. Sidan sparar ditt temaval lokalt i webbläsaren.</p>
+          </section>
+
+          <section>
+            <h2>9. Support, ändamål och rättslig grund</h2>
+            <p>Appen hanterar data för att ge dig de funktioner du väljer. När behandling av personuppgifter är nödvändig för att tillhandahålla appen eller en funktion som du begär är den rättsliga grunden att fullgöra avtalet med dig. Du väljer själv om du vill aktivera molnfunktionerna.</p>
+            <p>När du mejlar oss använder vi avsändaradressen, meddelandet och bilagor du väljer att skicka för att besvara och följa upp ärendet. Vårt berättigade intresse är att hjälpa användare och hantera fel. Supportmejlen hanteras via Microsoft Outlook. Se <a href="https://privacy.microsoft.com/privacystatement">Microsofts integritetsinformation</a>. Vi behåller supportärenden så länge de behövs för att hantera ärendet och därefter bara om det behövs för en rättslig skyldighet eller ett rättsligt anspråk.</p>
+          </section>
+
+          <section>
+            <h2>10. Lagringstid och radering</h2>
+            <p>Lokal data finns kvar tills du raderar den i appen, återställer appdata eller avinstallerar appen, med reservation för enhets- och systembackuper. CloudKit-poster finns kvar tills de raderas genom tillgängliga app- eller iCloud-flöden. iCloud Drive-backuper finns kvar tills de raderas eller roteras.</p>
+            <p>Avinstallation raderar normalt appens lokala data från enheten, men raderar inte nödvändigtvis CloudKit-data, iCloud Drive-backuper, systembackuper, exporterade filer eller kopior som redan har delats. Dessa måste hanteras separat.</p>
+          </section>
+
+          <section>
+            <h2>11. Säkerhet och dina val</h2>
+            <p>Appen använder iOS app-sandbox, lokala databasfunktioner och Apples behörighets- och iCloud-API:er. Ingen teknisk lösning kan garantera absolut säkerhet. Skydda enheten och Apple-kontot, håll iOS uppdaterat och dela inte exportfiler med obehöriga.</p>
+            <p>Du kan använda de lokala kärnfunktionerna utan CloudKit. URL-import, molnfunktioner, StoreKit och vissa delningar kräver nätverk.</p>
+          </section>
+
+          <section>
+            <h2>12. Barn och känsligt innehåll</h2>
+            <p>Appen är inte utformad för riktad profilering eller annonsering till barn. Recept, bilder, anteckningar och delningar kan ändå innehålla personuppgifter som användaren själv lägger in. Lägg inte in känsliga eller andra personers uppgifter om du saknar rätt att behandla eller dela dem.</p>
+          </section>
+
+          <section>
+            <h2>13. Dina rättigheter och kontakt</h2>
+            <p>Du kan se, redigera, exportera och radera mycket av innehållet direkt i appen. För data hos Apple eller en vald extern tjänst kan du även behöva använda den tjänstens kontroller.</p>
+            <p>Kontakta <a href="mailto:taste-ties@hotmail.com">taste-ties@hotmail.com</a> för frågor eller för att begära tillgång, rättelse, radering, begränsning eller dataportabilitet, eller för att invända mot behandling som bygger på berättigat intresse. Vilka rättigheter som gäller beror på behandlingen. Du kan klaga hos <a href="https://www.imy.se">Integritetsskyddsmyndigheten</a>.</p>
+          </section>
+
+          <section>
+            <h2>14. Ändringar</h2>
+            <p>Policyn uppdateras när datamodell, molnfunktioner, tredjepartstjänster eller rättsliga förutsättningar ändras. Uppdateringsdatumet ska ändras när en ny version publiceras.</p>
+          </section>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a href="index.html" class="footer-brand"><img src="assets/app-icon.png" alt="" width="36" height="36"><span>TasteTies Support</span></a>
+      <nav aria-label="Sidfot"><ul class="footer-nav"><li><a href="index.html#vanliga-fragor">Vanliga frågor</a></li><li><a href="privacy.html" aria-current="page">Integritet</a></li></ul></nav>
+      <p class="copyright">© <span data-current-year>2026</span> TasteTies. Alla rättigheter förbehållna.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
